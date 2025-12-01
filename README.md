@@ -55,6 +55,7 @@ A small café moment turned into a polished project that restaurants can actuall
 ---
 
 🖼️ Screenshots
+[digital QR-Scaner](images/Digital-qr.png)
 
 (Add your own screenshots here later — UI, hero section, menu categories, mobile view)
 
@@ -148,6 +149,7 @@ Just tell me what vibe you want.
 
 This project is released under the MIT License.
 Created with ❤️ by CodeCraft by Syed.
+
 
 
 
