@@ -66,7 +66,6 @@ A small café moment turned into a polished project that restaurants can actuall
 📱 QR Code (Add Yours Here)
 
 👉 Place your QR PNG here:
-![Preview](./image/Digital-qr.png)
 
 
 ```html
@@ -149,5 +148,6 @@ Just tell me what vibe you want.
 
 This project is released under the MIT License.
 Created with ❤️ by CodeCraft by Syed.
+
 
 
