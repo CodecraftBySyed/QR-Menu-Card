@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Crispy Fries",
+    "category": "starters",
+    "price": 120,
+    "rating": 4.8,
+    "desc": "Golden fries with smoked paprika and truffle salt.",
+    "image": "./images/Crispy-Fries.png"
+  },
+  {
+    "name": "Garlic Bread",
+    "category": "starters",
+    "price": 90,
+    "rating": 4.9,
+    "desc": "Toasted ciabatta with roasted garlic butter and parsley.",
+    "image": "./images/Garlic-Bread.png"
+  },
+  {
+    "name": "Spring Rolls",
+    "category": "starters",
+    "price": 110,
+    "rating": 4.7,
+    "desc": "Crispy rolls filled with vegetables and served with sweet chili sauce.",
+    "image": "./images/Spring-Rolls.png"
+  },
+  {
+    "name": "Bruschetta",
+    "category": "starters",
+    "price": 100,
+    "rating": 4.9,
+    "desc": "Toasted bread with tomato, basil, garlic, and olive oil.",
+    "image": "./images/Bruschetta.png"
+  },
+  {
+    "name": "Veg Pizza",
+    "category": "main",
+    "price": 299,
+    "rating": 4.8,
+    "desc": "Creamy mozzarella, fresh vegetables, and basil on wood-fired crust.",
+    "image": "./images/Veg-Pizza.png"
+  },
+  {
+    "name": "Grilled Salmon",
+    "category": "main",
+    "price": 399,
+    "rating": 4.9,
+    "desc": "Fresh salmon fillet with lemon butter and seasonal vegetables.",
+    "image": "./images/Grilled-Salmon.png"
+  },
+  {
+    "name": "Ribeye Steak",
+    "category": "main",
+    "price": 499,
+    "rating": 4.7,
+    "desc": "Premium beef with herb butter and truffle mashed potatoes.",
+    "image": "./images/Ribeye-Steak.png"
+  },
+  {
+    "name": "Mushroom Risotto",
+    "category": "main",
+    "price": 280,
+    "rating": 4.8,
+    "desc": "Creamy arborio rice with porcini mushrooms and truffle oil.",
+    "image": "./images/Mushroom Risotto.png"
+  },
+  {
+    "name": "Lemon Mojito",
+    "category": "drinks",
+    "price": 80,
+    "rating": 4.9,
+    "desc": "Refreshing mint and lemon drink with sparkling water.",
+    "image": "./images/Lemon-Mojito.png"
+  },
+  {
+    "name": "Iced Coffee",
+    "category": "drinks",
+    "price": 120,
+    "rating": 4.8,
+    "desc": "Premium cold brew coffee with vanilla and cream.",
+    "image": "./images/Iced-Coffee.png"
+  },
+  {
+    "name": "Mango Lassi",
+    "category": "drinks",
+    "price": 100,
+    "rating": 4.7,
+    "desc": "Creamy yogurt drink with fresh mango puree.",
+    "image": "./images/Mango-Lassi.png"
+  },
+  {
+    "name": "Berry Smoothie",
+    "category": "drinks",
+    "price": 130,
+    "rating": 4.9,
+    "desc": "Mixed berries with yogurt and fresh orange juice.",
+    "image": "./images/Berry-Smoothie.png"
+  },
+  {
+    "name": "Chocolate Cake",
+    "category": "desserts",
+    "price": 150,
+    "rating": 4.9,
+    "desc": "Rich dark chocolate cake with ganache and berries.",
+    "image": "./images/Chocolate-Cake.png"
+  },
+  {
+    "name": "Tiramisu",
+    "category": "desserts",
+    "price": 140,
+    "rating": 4.8,
+    "desc": "Classic Italian dessert with espresso and mascarpone.",
+    "image": "./images/Tiramisu.png"
+  },
+  {
+    "name": "Cheesecake",
+    "category": "desserts",
+    "price": 160,
+    "rating": 4.7,
+    "desc": "Creamy New York style cheesecake with berry coulis.",
+    "image": "./images/Cheesecake.png"
+  },
+  {
+    "name": "Gelato",
+    "category": "desserts",
+    "price": 120,
+    "rating": 4.9,
+    "desc": "Italian ice cream with pistachio, vanilla, and chocolate.",
+    "image": "./images/Gelato.png"
+  }
+]

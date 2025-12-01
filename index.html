@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Culinary Experience - Premium Menu</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+  <!-- Tailwind CDN -->
+  <link rel="stylesheet" href="./src/output.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./src/style.css" />
+
+  
+</head>
+
+<body class="text-gray-800">
+
+  <!-- DEMO BANNER -->
+  <div class="bg-yellow-50 text-yellow-900 text-center py-2 text-sm border-b border-yellow-100">
+    This is a demo restaurant menu — created by
+    <a href="https://codecraftbysyed-portfolio.vercel.app/" target="_blank" rel="noopener" class="font-semibold text-red-600 hover:underline">CodeCraft by Syed</a>
+  </div>
+
+  <!-- HERO HEADER WITH VIDEO BACKGROUND -->
+  <header class="hero-header" id="heroHeader">
+    <video autoplay muted playsinline loop>
+      <source src="./video/video.webm" type="video/webm">
+    </video>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <!-- Modern Offer Box -->
+      <div class="offer-box">
+        <div class="offer-badge">🎉 Limited Time Offer</div>
+        <h2 class="offer-title">50% OFF</h2>
+        <p class="offer-text">Enjoy premium dishes at unbeatable prices. Valid for first-time orders only!</p>
+        <a href="#menuContainer" class="offer-cta">Order Now</a>
+      </div>
+
+      <!-- Hero Text -->
+      <div class="mt-8">
+        <div class="mb-2">
+          <span class="text-xs font-semibold tracking-widest uppercase" style="color:var(--c-red-1)">Premium Experience</span>
+        </div>
+        <h1 class="display-font text-5xl md:text-7xl font-bold text-white mb-4 theme-header">Bytes & Spicy</h1>
+        <p class="text-gray-300 text-lg md:text-xl theme-subtext">Discover extraordinary flavors crafted with passion</p>
+      </div>
+    </div>
+  </header>
+  <!-- CATEGORY BUTTONS -->
+  <div class="hidden"></div>
+
+  <!-- MENU ITEMS (Dynamic) -->
+  <div id="menuContainer" class="px-4 sm:px-6 py-8 md:py-12 pb-40 md:pb-24 bg-gradient-to-br from-white via-blue-50 to-cyan-50">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="display-font text-4xl md:text-5xl font-bold text-slate-800 mb-3 theme-header">Our Menu</h2>
+      <p class="text-gray-600 text-lg mb-8">Discover extraordinary flavors crafted with passion</p>
+      <!-- Dynamic menu grid populated by JS -->
+      <div id="menuGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6"></div>
+    </div>
+  </div>
+
+  <!-- BOTTOM MOBILE MENU (mobile-only, single-row icon bar) -->
+  <div class="fixed bottom-0 left-0 right-0 header-gradient z-50">
+    <div class="px-2">
+      <nav class="flex items-center justify-between h-14">
+        <button data-filter="all" aria-label="All" class="mobile-menu-btn active flex-1 flex items-center justify-center transition-all rounded-md">
+          <span class="icon">📋</span>
+          <span class="label hidden md:inline-block ml-2">All</span>
+        </button>
+        <button data-filter="starters" aria-label="Starters" class="mobile-menu-btn flex-1 flex items-center justify-center transition-all rounded-md">
+          <span class="icon">🥗</span>
+          <span class="label hidden md:inline-block ml-2">Starters</span>
+        </button>
+        <button data-filter="main" aria-label="Main" class="mobile-menu-btn flex-1 flex items-center justify-center transition-all rounded-md">
+          <span class="icon">🍽</span>
+          <span class="label hidden md:inline-block ml-2">Main</span>
+        </button>
+        <button data-filter="drinks" aria-label="Drinks" class="mobile-menu-btn flex-1 flex items-center justify-center transition-all rounded-md">
+          <span class="icon">🥤</span>
+          <span class="label hidden md:inline-block ml-2">Drinks</span>
+        </button>
+        <button data-filter="desserts" aria-label="Desserts" class="mobile-menu-btn flex-1 flex items-center justify-center transition-all rounded-md">
+          <span class="icon">🍰</span>
+          <span class="label hidden md:inline-block ml-2">Desserts</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <!-- SCROLL TO FOOTER BUTTON -->
+  <div class="text-center py-8 ">
+    <button id="scrollToFooterBtn" aria-expanded="false" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-br from-pink-500 to-red-500 text-white shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300">
+      <span id="scrollBtnIcon" class="bounce-arrow text-2xl leading-none">↓</span>
+      <span id="scrollBtnLabel" class="text-sm font-semibold leading-none">Open</span>
+    </button>
+  </div>
+
+  <!-- Overlay shown when footer opens -->
+  <div id="footerOverlay" aria-hidden="true"></div>
+
+  <!-- FOOTER (hidden panel that slides up) -->
+  <footer id="footerSection" class="footer-panel bg-gray-900 text-gray-300 py-8 md:py-12 max-h-[70vh] overflow-y-auto">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <!-- About Section -->
+        <div>
+          <h3 class="display-font text-xl font-bold text-white mb-4">Bytes & Spicy</h3>
+          <p class="text-sm leading-relaxed">Premium dining experience with extraordinary flavors crafted with passion. Scan the QR code to explore our complete menu.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#menuContainer" class="hover:text-white transition-colors">Menu</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Contact Us</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Reservation</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Social & Contact -->
+        <div>
+          <h3 class="text-lg font-bold text-white mb-4">Follow Us</h3>
+          <div class="flex gap-4 mb-4">
+            <a href="https://codecraftbysyed-portfolio.vercel.app/" class="text-gray-400 hover:text-white transition-colors text-xl">📱</a>
+            <a href="https://codecraftbysyed-portfolio.vercel.app/" class="text-gray-400 hover:text-white transition-colors text-xl">🌐</a>
+            <a href="https://codecraftbysyed-portfolio.vercel.app/" class="text-gray-400 hover:text-white transition-colors text-xl">📧</a>
+          </div>
+          <p class="text-sm"><strong>Phone:</strong> +91 XXX XXX XXXX</p>
+          <p class="text-sm"><strong>Email:</strong> info@culinary.com</p>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-gray-700 my-8"></div>
+
+      <!-- Footer Bottom -->
+      <div class="flex flex-col md:flex-row items-center justify-between text-xs" >
+        <p class="text-gray-400 mb-4 md:mb-0">
+          &copy; 2025 Culinary Experience. All rights reserved.
+        </p>
+        <p class="text-gray-400">
+          Powered by <a href="https://codecraftbysyed-portfolio.vercel.app/" target="_blank" rel="noopener" style="color:var(--c-red-1)" class="font-bold hover:underline">CodeCraft by Syed</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

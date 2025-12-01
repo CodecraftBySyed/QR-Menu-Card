@@ -1,0 +1,408 @@
+/* src/style.css - LEAN & CLEAN */
+
+/* ===== CSS VARIABLES (Theme Colors) ===== */
+:root {
+  --c-red-1: #FF5555;
+  --c-red-2: #FF937E;
+  --c-green-1: #C1E59F;
+  --c-green-2: #A3D78A;
+  --c-red-1-rgb: 255, 85, 85;
+  --c-red-2-rgb: 255, 147, 126;
+  --c-green-1-rgb: 193, 229, 159;
+  --c-green-2-rgb: 163, 215, 138;
+  --glass: rgba(255, 255, 255, 0.06);
+}
+
+/* ===== TYPOGRAPHY ===== */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.display-font {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background: linear-gradient(135deg, rgba(var(--c-green-1-rgb), 0.04) 0%, rgba(var(--c-green-2-rgb), 0.03) 40%, #0f172a 100%);
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scale-in {
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.rotate-in {
+  animation: rotateIn 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+.bounce-arrow {
+  animation: bounce 2s infinite;
+}
+
+/* ===== MENU CARD UI ===== */
+.menu-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.28);
+}
+
+.menu-card img {
+  transition: transform 0.4s ease;
+  object-fit: cover;
+}
+
+.menu-card:hover img {
+  transform: scale(1.06);
+}
+
+.menu-card h3 {
+  color: var(--c-red-1);
+}
+
+.menu-card p {
+  color: rgba(var(--c-red-1-rgb), 0.75);
+}
+
+/* ===== THEME UTILITIES ===== */
+.price-tag {
+  background: linear-gradient(135deg, var(--c-green-1) 0%, var(--c-green-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.theme-header {
+  background: linear-gradient(90deg, var(--c-red-1), var(--c-red-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.theme-subtext {
+  color: rgba(var(--c-red-2-rgb), 0.95);
+}
+
+/* Tailwind color override for theme consistency */
+.bg-pink-500 {
+  background: linear-gradient(135deg, var(--c-red-1) 0%, var(--c-red-2) 100%) !important;
+}
+
+.text-pink-500 {
+  color: var(--c-red-1) !important;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-header {
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1f35 0%, #0f172a 100%);
+}
+
+.hero-header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s ease;
+}
+
+.hero-header.scrolled video {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.65) 0%, rgba(26, 31, 53, 0.75) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-header.scrolled {
+  min-height: auto;
+  padding: 0;
+  background: transparent;
+  z-index: 40;
+}
+
+.hero-header.scrolled .hero-content {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+}
+
+.hero-header.scrolled .hero-overlay {
+  background: transparent;
+}
+
+/* ===== OFFER BOX (Glassmorphism) ===== */
+.offer-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.7s ease-out;
+}
+
+.offer-badge {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.8rem;
+}
+
+.offer-title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--c-red-1) 0%, var(--c-red-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+.offer-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.offer-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--c-red-1) 0%, var(--c-red-2) 100%);
+  color: white;
+  padding: 0.9rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 85, 85, 0.25);
+  cursor: pointer;
+}
+
+.offer-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(255, 85, 85, 0.35);
+}
+
+/* ===== MOBILE MENU BUTTON ===== */
+.mobile-menu-btn {
+  background: var(--glass);
+  color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.25s ease;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.mobile-menu-btn:active {
+  transform: scale(0.96);
+}
+
+.mobile-menu-btn[data-filter="all"].active,
+.mobile-menu-btn[data-filter="main"].active,
+.mobile-menu-btn[data-filter="desserts"].active {
+  background: linear-gradient(135deg, var(--c-red-1) 0%, var(--c-red-2) 100%);
+  color: white;
+  box-shadow: 0 6px 18px rgba(255, 85, 85, 0.18);
+}
+
+.mobile-menu-btn[data-filter="starters"].active,
+.mobile-menu-btn[data-filter="drinks"].active {
+  background: linear-gradient(135deg, var(--c-green-1) 0%, var(--c-green-2) 100%);
+  color: white;
+  box-shadow: 0 6px 18px rgba(163, 215, 138, 0.18);
+}
+
+.mobile-menu-btn .icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu-btn {
+    height: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu-btn.active {
+    background: var(--glass);
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: none;
+  }
+}
+
+/* ===== HEADER GRADIENT ===== */
+.header-gradient {
+  background: linear-gradient(135deg, rgba(255, 85, 85, 0.06) 0%, rgba(255, 147, 126, 0.04) 100%);
+  border-bottom: 1px solid rgba(255, 85, 85, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+/* ===== FOOTER PANEL (hidden by default, slides up) ===== */
+#footerSection.footer-panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease;
+  z-index: 60;
+  will-change: transform, opacity;
+}
+
+#footerSection.footer-visible {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* Overlay that dims page when footer is open */
+#footerOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 55;
+  pointer-events: none;
+}
+
+#footerOverlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Keep the scroll-to-footer button in normal flow (not fixed). Add bottom spacing
+   so when the page is scrolled down the button sits visually above the fixed
+   bottom mobile menu. */
+#scrollToFooterBtn {
+  position: static; /* stay in document flow */
+  left: auto;
+  transform: none;
+  bottom: auto;
+  z-index: auto;
+  margin-bottom: 5.25rem; /* space so button sits above the fixed bottom bar */
+}
+
+/* On larger screens ensure spacing remains normal */
+@media (min-width: 768px) {
+  #scrollToFooterBtn {
+    margin-bottom: 2rem;
+  }
+  .text-center.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+}
