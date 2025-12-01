@@ -54,8 +54,10 @@ A small café moment turned into a polished project that restaurants can actuall
 
 ---
 
-🖼️ Screenshots
+Digital QR Menu Design 
 <img src="images/Digital-qr.png" alt="A Digital QR Scanner" width="500"/>
+Normal QR Menu Design 
+<img src="images/narmal-qr.png" alt="A Digital QR Scanner" width="500"/>
 
 (Add your own screenshots here later — UI, hero section, menu categories, mobile view)
 
@@ -149,6 +151,7 @@ Just tell me what vibe you want.
 
 This project is released under the MIT License.
 Created with ❤️ by CodeCraft by Syed.
+
 
 
 
