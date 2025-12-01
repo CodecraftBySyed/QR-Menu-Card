@@ -49,7 +49,7 @@ A small café moment turned into a polished project that restaurants can actuall
 
 🔗 Live Demo & Portfolio
 
-- Live Demo: (add your deployed link here)
+- Live Demo: (https://qr-menu-card.netlify.app/)
 - Developer Portfolio: https://codecraftbysyed-portfolio.vercel.app/
 
 ---
@@ -149,3 +149,4 @@ Just tell me what vibe you want.
 
 This project is released under the MIT License.
 Created with ❤️ by CodeCraft by Syed.
+
