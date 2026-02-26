@@ -1,0 +1,1501 @@
+[
+  {
+    "name": "Dum Chai",
+    "category": "Drinks",
+    "price": 15,
+    "rating": 4.5,
+    "desc": "Traditional strong tea brewed with aromatic spices.",
+    "image": "./images/Dum chai.png",
+    "tags": [
+      "popular"
+    ],
+    "special": true
+  },
+  {
+    "name": "Cappuccino Coffee",
+    "category": "Drinks",
+    "price": 50,
+    "rating": 4.8,
+    "desc": "Rich, dark espresso topped with a thick, creamy cloud of froth.",
+    "image": "./images/Cappuccino.png",
+    "tags": [
+      "New"
+    ],
+    "special": true
+  },
+  {
+    "name": "Masala Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.7,
+    "desc": "Spiced tea brewed with ginger, cardamom, and milk.",
+    "image": "./images/Masala chai.png",
+    "tags": [
+      "bestseller"
+    ],
+    "special": true
+  },
+  {
+  "name": "Dalgona coffee",
+  "category": "Drinks",
+  "price": 50,
+  "rating": 4.6,
+  "desc": "a whipped, creamy beverage made by vigorously.",
+  "image": "./images/Dalgona coffee.png",
+  "tags": [
+    "New"
+  ],
+  "special": true
+  },
+  {
+    "name": "Cardamom Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.6,
+    "desc": "Aromatic tea infused with fresh cardamom pods.",
+    "image": "./images/Cardamom chai.png",
+    "tags": [
+      "aromatic"
+    ],
+    "special": true
+  },
+  {
+    "name": "Ginger Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.6,
+    "desc": "Refreshing tea with a strong kick of fresh ginger.",
+    "image": "./images/Ginger chai.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    
+    "name": "Chocolate Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.5,
+    "desc": "A unique fusion of tea and rich cocoa flavor.",
+    "image": "./images/Chocolate chai.png",
+    "tags": [
+      "new"
+    ],
+    "special": true
+  },
+  {
+    "name": "Hazelnut Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.5,
+    "desc": "Warm tea with a nutty hazelnut aroma.",
+    "image": "./images/Hazelnut chai.png",
+    "tags": [
+      "nutty"
+    ],
+    "special": false
+  },
+  {
+    "name": "Vanilla Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.5,
+    "desc": "Smooth tea with a hint of sweet vanilla.",
+    "image": "./images/Vanilla Coffee.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Thai Rose Coconut Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.6,
+    "desc": "Floral tea infused with rose and coconut essence.",
+    "image": "./images/Thai Rose chai.png",
+    "tags": [
+      "aromatic"
+    ],
+    "special": false
+  },
+  {
+    "name": "Caramel Chai",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.7,
+    "desc": "Sweet and creamy tea with caramel notes.",
+    "image": "./images/Caramel chai.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": true
+  },
+  {
+    "name": "RC Coffee",
+    "category": "Drinks",
+    "price": 20,
+    "rating": 4.5,
+    "desc": "Our house special brewed coffee.",
+    "image": "./images/RC Coffee.png",
+    "tags": [
+      "popular"
+    ],
+    "special": false
+  },
+  {
+    "name": "Almond Coffee",
+    "category": "Drinks",
+    "price": 25,
+    "rating": 4.6,
+    "desc": "Rich coffee blended with almond flavor.",
+    "image": "./images/Almond Coffee.png",
+    "tags": [
+      "nutty"
+    ],
+    "special": false
+  },
+  {
+    "name": "Vanilla Coffee",
+    "category": "Drinks",
+    "price": 25,
+    "rating": 4.6,
+    "desc": "Classic coffee with a dash of vanilla.",
+    "image": "./images/Vanilla Coffee.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Hazelnut Coffee",
+    "category": "Drinks",
+    "price": 25,
+    "rating": 4.7,
+    "desc": "Aromatic coffee with roasted hazelnut notes.",
+    "image": "./images/Hazelnut Coffee.png",
+    "tags": [
+      "nutty"
+    ],
+    "special": false
+  },
+  {
+    "name": "Tapioca Ice Tea",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.8,
+    "desc": "Chilled tea served with chewy tapioca pearls.",
+    "image": "./images/Tapioca Ice Tea.png",
+    "tags": [
+      "Bubble Tea"
+    ],
+    "special": false
+  },
+  {
+    "name": "Vanilla Ice Coffee",
+    "category": "Drinks",
+    "price": 100,
+    "rating": 4.7,
+    "desc": "Cold brewed coffee with sweet vanilla syrup.",
+    "image": "./images/Vanilla Ice Coffee.png",
+    "tags": [
+      "Bubble Coffee"
+    ],
+    "special": false
+  },
+  {
+    "name": "Almond Ice Coffee",
+    "category": "Drinks",
+    "price": 120,
+    "rating": 4.7,
+    "desc": "Chilled coffee blended with almond milk/flavor.",
+    "image": "./images/Almond Ice Coffee.png",
+    "tags": [
+      "Bubble Coffee"
+    ],
+    "special": false
+  },
+  {
+    "name": "Hazelnut Ice Coffee",
+    "category": "Drinks",
+    "price": 120,
+    "rating": 4.8,
+    "desc": "Iced coffee with rich hazelnut syrup.",
+    "image": "./images/Hazelnut Ice Coffee.png",
+    "tags": [
+      "Bubble Coffee"
+    ],
+    "special": false
+  },
+  {
+    "name": "Mango Bubble Tea",
+    "category": "Drinks",
+    "price": 120,
+    "rating": 4.7,
+    "desc": "Refreshing mango-flavored tea blended with chewy tapioca pearls.",
+    "image": "./images/Mango Bubble Tea.png",
+    "tags": [
+      "Bubble Tea"
+    ],
+    "special": false
+  },
+  {
+    "name": "Strawberry Bubble Tea",
+    "category": "Drinks",
+    "price": 120,
+    "rating": 4.8,
+    "desc": "Sweet and creamy strawberry tea served with soft bubble pearls.",
+    "image": "./images/Strawberry Bubble Tea.png",
+    "tags": [
+      "Bubble Tea"
+    ],
+    "special": false
+  },
+  {
+    "name": "Pineapple Bubble Tea",
+    "category": "Drinks",
+    "price": 120,
+    "rating": 4.6,
+    "desc": "Tropical pineapple tea with a tangy taste and chewy bubbles.",
+    "image": "./images/Pineapple Bubble Tea.png",
+    "tags": [
+      "Bubble Tea"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chocolate Bubble Tea",
+    "category": "Drinks",
+    "price": 150,
+    "rating": 4.9,
+    "desc": "Rich chocolate-flavored milk tea with delicious tapioca pearls.",
+    "image": "./images/Chocolate Bubble Tea.png",
+    "tags": [
+      "Bubble Tea"
+    ],
+    "special": true
+  },
+  {
+    "name": "Cold Coffee (Almond)",
+    "category": "Drinks",
+    "price": 80,
+    "rating": 4.5,
+    "desc": "Refreshing cold coffee with almond flavor.",
+    "image": "./images/Cold Coffee (Almond).png",
+    "tags": [
+      "cold"
+    ],
+    "special": false
+  },
+  {
+    "name": "Cold Coffee (Vanilla)",
+    "category": "Drinks",
+    "price": 80,
+    "rating": 4.5,
+    "desc": "Classic cold coffee with a hint of vanilla.",
+    "image": "./images/Cold Coffee (Vanilla).png",
+    "tags": [
+      "cold"
+    ],
+    "special": false
+  },
+  {
+    "name": "Cold Coffee (Caramel)",
+    "category": "Drinks",
+    "price": 80,
+    "rating": 4.6,
+    "desc": "Sweet cold coffee with caramel drizzle.",
+    "image": "./images/Cold Coffee (Caramel).png",
+    "tags": [
+      "cold"
+    ],
+    "special": false
+  },
+  {
+    "name": "Cold Coffee (Hazelnut)",
+    "category": "Drinks",
+    "price": 80,
+    "rating": 4.7,
+    "desc": "Rich cold coffee with hazelnut flavor.",
+    "image": "./images/Cold Coffee (Hazelnut).png",
+    "tags": [
+      "cold"
+    ],
+    "special": false
+  },
+  {
+    "name": "Virgin Mojito",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.6,
+    "desc": "Classic refreshing mint and lime cooler.",
+    "image": "./images/Virgin Mojito.png",
+    "tags": [
+      "refreshing"
+    ],
+    "special": false
+  },
+  {
+    "name": "Green Mint Mojito",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.5,
+    "desc": "Extra minty refreshing cooler.",
+    "image": "./images/Green Mint Mojito.png",
+    "tags": [
+      "refreshing"
+    ],
+    "special": false
+  },
+  {
+    "name": "Mango Mojito",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Tropical mango flavored mojito.",
+    "image": "./images/Mango Mojito.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Pineapple Mojito",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.5,
+    "desc": "Zesty pineapple flavored mojito.",
+    "image": "./images/Pineapple Mojito.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Blueberry Mojito",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.7,
+    "desc": "Sweet and tart blueberry mojito.",
+    "image": "./images/Blueberry Mojito.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Blue Curacao Mojito",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.8,
+    "desc": "Exotic blue citrus refreshing drink.",
+    "image": "./images/Blue Curacao Mojito.png",
+    "tags": [
+      "refreshing"
+    ],
+    "special": false
+  },
+  {
+    "name": "Lemon Juice",
+    "category": "Drinks",
+    "price": 30,
+    "rating": 4.5,
+    "desc": "Freshly squeezed lemon juice.",
+    "image": "./images/Lemon Juice.png",
+    "tags": [
+      "Juice"
+    ],
+    "special": false
+  },
+  {
+    "name": "Watermelon Juice",
+    "category": "Drinks",
+    "price": 50,
+    "rating": 4.6,
+    "desc": "Cool and hydrating fresh watermelon juice.",
+    "image": "./images/Watermelon Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Musk Melon Juice",
+    "category": "Drinks",
+    "price": 50,
+    "rating": 4.5,
+    "desc": "Sweet and creamy musk melon juice.",
+    "image": "./images/Musk Melon Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Apple Juice",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Freshly pressed sweet apple juice.",
+    "image": "./images/Apple Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Orange Juice",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Tangy and fresh orange juice.",
+    "image": "./images/Orange Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Mosambi Juice",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.5,
+    "desc": "Sweet lime juice, great for digestion.",
+    "image": "./images/Mosambi Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Grape Juice",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Rich and sweet black grape juice.",
+    "image": "./images/Grape Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Pineapple Juice",
+    "category": "Drinks",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Fresh pineapple juice.",
+    "image": "./images/Pineapple Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Sapota Juice",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.5,
+    "desc": "Creamy chikoo juice.",
+    "image": "./images/Sapota Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Pomegranate Juice",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.8,
+    "desc": "Healthy and sweet pomegranate juice.",
+    "image": "./images/Pomegranate Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Strawberry Juice",
+    "category": "Drinks",
+    "price": 80,
+    "rating": 4.8,
+    "desc": "Fresh seasonal strawberry juice.",
+    "image": "./images/Strawberry Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Dragon Fruit Juice",
+    "category": "Drinks",
+    "price": 80,
+    "rating": 4.9,
+    "desc": "Exotic dragon fruit juice.",
+    "image": "./images/Dragon Fruit Juice.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Vanilla Milkshake",
+    "category": "Drinks",
+    "price": 80,
+    "rating": 4.5,
+    "desc": "Classic thick vanilla milkshake.",
+    "image": "./images/Vanilla Milkshake.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chocolate Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.7,
+    "desc": "Rich chocolate thick shake.",
+    "image": "./images/Chocolate Milkshake.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Butterscotch Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.6,
+    "desc": "Crunchy butterscotch flavored shake.",
+    "image": "./images/Butterscotch Milkshake.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Strawberry Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.7,
+    "desc": "Pink strawberry milkshake.",
+    "image": "./images/Strawberry Milkshake.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Mango Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.7,
+    "desc": "Seasonal fresh mango shake.",
+    "image": "./images/Mango Milkshake.png",
+    "tags": [
+      "fruit"
+    ],
+    "special": false
+  },
+  {
+    "name": "Pista Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.6,
+    "desc": "Green pistachio flavored milkshake.",
+    "image": "./images/Pista Milkshake.png",
+    "tags": [
+      "nutty"
+    ],
+    "special": false
+  },
+  {
+    "name": "Peanut Butter Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.8,
+    "desc": "Creamy peanut butter blended shake.",
+    "image": "./images/Peanut Butter Milkshake.png",
+    "tags": [
+      "nutty"
+    ],
+    "special": false
+  },
+  {
+    "name": "Oreo Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.8,
+    "desc": "Crunchy Oreo cookie blended shake.",
+    "image": "./images/Oreo Milkshake.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Oreo Kitkat Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.9,
+    "desc": "Fusion of Oreo and KitKat chocolates.",
+    "image": "./images/Oreo Kitkat Milkshake.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Dark Fantasy Milkshake",
+    "category": "Drinks",
+    "price": 90,
+    "rating": 4.7,
+    "desc": "A special fantasy blend shake.",
+    "image": "./images/Fantasy Milkshake.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Almond & Nuts Milkshake",
+    "category": "Drinks",
+    "price": 100,
+    "rating": 4.8,
+    "desc": "Healthy shake loaded with almonds and nuts.",
+    "image": "./images/Almond & Nuts Milkshake.png",
+    "tags": [
+      "nutty"
+    ],
+    "special": false
+  },
+  {
+    "name": "RC Spl Rose Milk",
+    "category": "Drinks",
+    "price": 40,
+    "rating": 4.6,
+    "desc": "Chilled rose flavored milk.",
+    "image": "./images/RC Spl Rose Milk.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "RC Spl Milo Milk",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.7,
+    "desc": "Chilled milk with Milo malt flavor.",
+    "image": "./images/RC Spl Milo Milk.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "RC Spl Chocolate Milk",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.6,
+    "desc": "Classic chilled chocolate milk.",
+    "image": "./images/RC Spl Chocolate Milk.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Salted Fries",
+    "category": "Starters",
+    "price": 60,
+    "rating": 4.5,
+    "desc": "Classic crispy salted french fries.",
+    "image": "./images/Salted Fries.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Salt & Pepper Fries",
+    "category": "Starters",
+    "price": 70,
+    "rating": 4.5,
+    "desc": "Crispy fries tossed in salt and pepper.",
+    "image": "./images/Salt & Pepper Fries.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Mexican Fries",
+    "category": "Starters",
+    "price": 80,
+    "rating": 4.6,
+    "desc": "Fries topped with spicy Mexican seasoning.",
+    "image": "./images/Mexican Fries.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Peri Peri Fries",
+    "category": "Starters",
+    "price": 80,
+    "rating": 4.7,
+    "desc": "Spicy peri peri flavored crispy fries.",
+    "image": "./images/Peri Peri Fries.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Veg Momos (5pcs)",
+    "category": "Starters",
+    "price": 60,
+    "rating": 4.5,
+    "desc": "Steamed dumplings filled with mixed vegetables.",
+    "image": "./images/Veg Momos (5pcs).png",
+    "tags": [
+      "steamed"
+    ],
+    "special": false
+  },
+  {
+    "name": "Corn Cheese Momos (5pcs)",
+    "category": "Starters",
+    "price": 70,
+    "rating": 4.7,
+    "desc": "Momos filled with sweet corn and cheese.",
+    "image": "./images/Corn Cheese Momos (5pcs).png",
+    "tags": [
+      "cheesy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Paneer Momos (5pcs)",
+    "category": "Starters",
+    "price": 80,
+    "rating": 4.6,
+    "desc": "Fried momos filled with spiced paneer.",
+    "image": "./images/Paneer Momos (5pcs).png",
+    "tags": [
+      "fried"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chicken Momos (5pcs)",
+    "category": "Starters",
+    "price": 80,
+    "rating": 4.6,
+    "desc": "Juicy fried momos filled with minced chicken.",
+    "image": "./images/Chicken Momos (5pcs).png",
+    "tags": [
+      "fried"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chicken Cheese Momos (5pcs)",
+    "category": "Starters",
+    "price": 90,
+    "rating": 4.8,
+    "desc": "Chicken momos loaded with melted cheese.",
+    "image": "./images/Chicken Cheese Momos (5pcs).png",
+    "tags": [
+      "cheesy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Classic Fried Chicken Popcorn",
+    "category": "Starters",
+    "price": 80,
+    "rating": 4.6,
+    "desc": "Bite-sized crispy fried chicken popcorn.",
+    "image": "./images/Classic Fried Chicken Popcorn.png",
+    "tags": [
+      "Popcorn"
+    ],
+    "special": false
+  },
+  {
+    "name": "Classic Fried Chicken Regular",
+    "category": "Starters",
+    "price": 70,
+    "rating": 4.5,
+    "desc": "Classic style fried chicken piece.",
+    "image": "./images/Classic Fried Chicken Regular.png",
+    "tags": [
+      "Regular"
+    ],
+    "special": false
+  },
+  {
+    "name": "Classic Fried Chicken Drumstick",
+    "category": "Starters",
+    "price": 60,
+    "rating": 4.7,
+    "desc": "Crispy fried chicken drumstick.",
+    "image": "./images/Classic Fried Chicken Drumstick.png",
+    "tags": [
+      "Drumstick"
+    ],
+    "special": false
+  },
+  {
+    "name": "Classic Fried Chicken Wings (4pcs)",
+    "category": "Starters",
+    "price": 130,
+    "rating": 4.8,
+    "desc": "Four pieces of crispy fried chicken wings.",
+    "image": "./images/Classic Fried Chicken Strips (4pcs).png",
+    "tags": [
+      "Wings"
+    ],
+    "special": false
+  },
+  {
+    "name": "Classic Fried Chicken Strips (4pcs)",
+    "category": "Starters",
+    "price": 130,
+    "rating": 4.7,
+    "desc": "Boneless crispy fried chicken strips.",
+    "image": "./images/Classic Fried Chicken Strips.png",
+    "tags": [
+      "Strips"
+    ],
+    "special": false
+  },
+    {
+    "name": "Mini Bucket",
+    "category": "Starters",
+    "price": 260,
+    "rating": 4.7,
+    "desc": "Classic Fried Chicken Mini Bucket.",
+    "image": "./images/Mini Bucket.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+    {
+    "name": "Small Bucket",
+    "category": "Starters",
+    "price": 180,
+    "rating": 4.7,
+    "desc": "Classic Fried Chicken Small Bucket.",
+    "image": "./images/Small Bucket.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Bun Butter Jam",
+    "category": "Starters",
+    "price": 40,
+    "rating": 4.4,
+    "desc": "Soft bun served with butter and fruit jam.",
+    "image": "./images/Bun Butter Jam.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Madurai Butter Bun",
+    "category": "Starters",
+    "price": 50,
+    "rating": 4.5,
+    "desc": "Famous Madurai style soft butter bun.",
+    "image": "./images/Madurai Butter Bun.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Bread Omelette",
+    "category": "Starters",
+    "price": 40,
+    "rating": 4.5,
+    "desc": "Classic egg omelette sandwich.",
+    "image": "./images/Bread Omelette (Special).png",
+    "tags": [
+      "Normal"
+    ],
+    "special": false
+  },
+  {
+    "name": "Bread Omelette",
+    "category": "Starters",
+    "price": 60,
+    "rating": 4.6,
+    "desc": "Loaded bread omelette with extra spices/veggies.",
+    "image": "./images/Bread Omelette (Special).png",
+    "tags": [
+      "Special"
+    ],
+    "special": false
+  },
+  {
+    "name": "Veg Burger",
+    "category": "Main",
+    "price": 70,
+    "rating": 4.5,
+    "desc": "Burger with a crispy vegetable patty.",
+    "image": "./images/Veg Burger.png",
+    "tags": [
+      "veg"
+    ],
+    "special": false
+  },
+  {
+    "name": "Veg Cheese Burger",
+    "category": "Main",
+    "price": 80,
+    "rating": 4.6,
+    "desc": "Veg burger topped with a slice of cheese.",
+    "image": "./images/Veg Cheese Burger.png",
+    "tags": [
+      "cheesy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Paneer Burger",
+    "category": "Main",
+    "price": 100,
+    "rating": 4.7,
+    "desc": "Burger with a spiced paneer patty.",
+    "image": "./images/Paneer Burger.png",
+    "tags": [
+      "veg"
+    ],
+    "special": false
+  },
+  {
+    "name": "Paneer Cheese Burger",
+    "category": "Main",
+    "price": 110,
+    "rating": 4.8,
+    "desc": "Paneer burger with extra cheese.",
+    "image": "./images/Paneer Cheese Burger.png",
+    "tags": [
+      "cheesy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chicken Burger",
+    "category": "Main",
+    "price": 110,
+    "rating": 4.7,
+    "desc": "Burger with a juicy chicken patty.",
+    "image": "./images/Chicken Burger.png",
+    "tags": [
+      "non-veg"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chicken Cheese Burger",
+    "category": "Main",
+    "price": 120,
+    "rating": 4.8,
+    "desc": "Chicken burger topped with melted cheese.",
+    "image": "./images/Chicken Cheese Burger.png",
+    "tags": [
+      "cheesy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Fried Chicken Burger",
+    "category": "Main",
+    "price": 130,
+    "rating": 4.9,
+    "desc": "Burger featuring a crispy fried chicken fillet.",
+    "image": "./images/Fried Chicken Burger.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Veg Pizza (Cup)",
+    "category": "Main",
+    "price": 50,
+    "rating": 4.4,
+    "desc": "Personal cup pizza with vegetable toppings.",
+    "image": "./images/Veg Pizza.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+  {
+    "name": "Veg Hot & Spicy Pizza (Cup)",
+    "category": "Main",
+    "price": 60,
+    "rating": 4.5,
+    "desc": "Spicy vegetable pizza cup.",
+    "image": "./images/Veg Hot & Spicy Pizza.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chicken Pizza (Cup)",
+    "category": "Main",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Pizza cup topped with chicken chunks.",
+    "image": "./images/Chicken Pizza.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+  {
+   "name": "Chicken Pizza",
+   "category": "Main",
+   "price": 180,
+   "rating": 4.6,
+   "desc": "Pizza topped with chicken chunks.",
+   "image": "./images/Chicken Pizzas.png",
+   "tags": [
+     "hot"
+   ],
+   "special": false
+  },
+   {
+    "name": "Mexican Pizza",
+    "category": "Main",
+    "price": 150,
+    "rating": 4.6,
+    "desc": "Mexican Pizza Spicy.",
+    "image": "./images/Mexican Pizza.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+     {
+    "name": "Mushroom Pizza",
+    "category": "Main",
+    "price": 150,
+    "rating": 4.6,
+    "desc": "Mushroom Pizza Spicy.",
+    "image": "./images/Mushroom Pizza.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+     {
+    "name": "Panneer Pizza",
+    "category": "Main",
+    "price": 160,
+    "rating": 4.6,
+    "desc": "Panneer Pizza Spicy.",
+    "image": "./images/Panneer Pizza.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+       {
+    "name": "Veg Pizza",
+    "category": "Main",
+    "price": 130,
+    "rating": 4.6,
+    "desc": "Veg Pizza with vegetable toppings.",
+    "image": "./images/Veg Pizza.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+
+  {
+    "name": "Chicken Hot & Spicy Pizza (Cup)",
+    "category": "Main",
+    "price": 80,
+    "rating": 4.7,
+    "desc": "Spicy chicken pizza cup.",
+    "image": "./images/Chicken Hot & Spicy Pizza.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Veg Maggi",
+    "category": "Main",
+    "price": 50,
+    "rating": 4.5,
+    "desc": "Classic Maggi noodles with vegetables.",
+    "image": "./images/Veg Maggi.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+  {
+    "name": "Veg Cheese Maggi",
+    "category": "Main",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Cheesy Maggi noodles with veggies.",
+    "image": "./images/Veg Cheese Maggi.png",
+    "tags": [
+      "cheesy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chicken Maggi",
+    "category": "Main",
+    "price": 80,
+    "rating": 4.7,
+    "desc": "Maggi noodles cooked with chicken chunks.",
+    "image": "./images/Chicken Maggi.png",
+    "tags": [
+      "hot"
+    ],
+    "special": false
+  },
+  {
+    "name": "Tawa Sandwich Veg Masala",
+    "category": "Main",
+    "price": 50,
+    "rating": 4.5,
+    "desc": "Grilled sandwich with spicy vegetable filling.",
+    "image": "./images/Tawa Sandwich Veg Masala.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Tawa Sandwich Paneer Masala",
+    "category": "Main",
+    "price": 70,
+    "rating": 4.7,
+    "desc": "Grilled sandwich with paneer filling.",
+    "image": "./images/Tawa Sandwich Paneer Masala.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Tawa Sandwich Mushroom Masala",
+    "category": "Main",
+    "price": 70,
+    "rating": 4.6,
+    "desc": "Grilled sandwich with mushroom masala.",
+    "image": "./images/Tawa Sandwich Mushroom Masala.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Tawa Sandwich Chicken Masala",
+    "category": "Main",
+    "price": 80,
+    "rating": 4.7,
+    "desc": "Grilled sandwich with spicy chicken filling.",
+    "image": "./images/Tawa Sandwich Chicken Masala.png",
+    "tags": [
+      "spicy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Belgian Chocolate Milk Waffle",
+    "category": "Desserts",
+    "price": 70,
+    "rating": 4.7,
+    "desc": "Cone waffle filled with Belgian milk chocolate.",
+    "image": "./images/Belgian Chocolate Milk Waffle.png",
+    "tags": [
+      "dessert"
+    ],
+    "special": false
+  },
+  {
+    "name": "Belgian Chocolate Dark Waffle",
+    "category": "Desserts",
+    "price": 80,
+    "rating": 4.8,
+    "desc": "Cone waffle filled with dark Belgian chocolate.",
+    "image": "./images/Belgian Chocolate Dark Waffle.png",
+    "tags": [
+      "dessert"
+    ],
+    "special": false
+  },
+  {
+    "name": "Cream & Cookies Waffle",
+    "category": "Desserts",
+    "price": 80,
+    "rating": 4.7,
+    "desc": "Cone waffle with cream and cookie crumble.",
+    "image": "./images/Cream & Cookies Waffle.png",
+    "tags": [
+      "dessert"
+    ],
+    "special": false
+  },
+  {
+    "name": "Hazelnut Waffle",
+    "category": "Desserts",
+    "price": 80,
+    "rating": 4.8,
+    "desc": "Cone waffle with rich hazelnut spread.",
+    "image": "./images/Hazelnut Waffle.png",
+    "tags": [
+      "nutty"
+    ],
+    "special": false
+  },
+  {
+    "name": "Bubblegum Waffle",
+    "category": "Desserts",
+    "price": 80,
+    "rating": 4.6,
+    "desc": "Kids favorite bubblegum flavored waffle.",
+    "image": "./images/Bubblegum Waffle.png",
+    "tags": [
+      "kids"
+    ],
+    "special": false
+  },
+  {
+    "name": "Red Velvet White Chocolate Waffle",
+    "category": "Desserts",
+    "price": 90,
+    "rating": 4.9,
+    "desc": "Red velvet waffle with white chocolate.",
+    "image": "./images/Red Velvet White Chocolate Waffle.png",
+    "tags": [
+      "dessert"
+    ],
+    "special": false
+  },
+  {
+    "name": "Palkova Hot Milk",
+    "category": "Desserts",
+    "price": 25,
+    "rating": 4.6,
+    "desc": "Hot milk infused with sweet Palkova.",
+    "image": "./images/Palkova Hot Milk.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Palkova Butter Bun",
+    "category": "Desserts",
+    "price": 50,
+    "rating": 4.7,
+    "desc": "Butter bun stuffed with sweet Palkova.",
+    "image": "./images/Palkova Butter Bun.png",
+    "tags": [
+      "snack"
+    ],
+    "special": false
+  },
+  {
+    "name": "Arabian Falooda Mini",
+    "category": "Desserts",
+    "price": 90,
+    "rating": 4.8,
+    "desc": "Rich dessert with vermicelli, ice cream and nuts.",
+    "image": "./images/Arabian Falooda Mini.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Arabian Falooda Regular",
+    "category": "Desserts",
+    "price": 130,
+    "rating": 4.9,
+    "desc": "Large portion of rich Arabian Falooda.",
+    "image": "./images/Arabian Falooda Regular.png",
+    "tags": [
+      "sweet"
+    ],
+    "special": false
+  },
+  {
+    "name": "Vanilla Ice Cream Pizza Waffle",
+    "category": "Desserts",
+    "price": 180,
+    "rating": 4.7,
+    "desc": "Waffle base topped with vanilla ice cream.",
+    "image": "./images/Vanilla Ice Cream Pizza Waffle.png",
+    "tags": [
+      "dessert"
+    ],
+    "special": false
+  },
+  {
+    "name": "Strawberry Ice Cream Pizza Waffle",
+    "category": "Desserts",
+    "price": 180,
+    "rating": 4.7,
+    "desc": "Waffle base topped with strawberry ice cream.",
+    "image": "./images/Strawberry Ice Cream Pizza Waffle.png",
+    "tags": [
+      "frozen"
+    ],
+    "special": false
+  },
+  {
+    "name": "Butterscotch Ice Cream Pizza Waffle",
+    "category": "Desserts",
+    "price": 180,
+    "rating": 4.7,
+    "desc": "Waffle base topped with butterscotch ice cream.",
+    "image": "./images/Butterscotch Ice Cream Pizza Waffle.png",
+    "tags": [
+      "frozen"
+    ],
+    "special": false
+  },
+  {
+    "name": "Chocolate Ice Cream Pizza Waffle",
+    "category": "Desserts",
+    "price": 180,
+    "rating": 4.8,
+    "desc": "Waffle base topped with chocolate ice cream.",
+    "image": "./images/Chocolate Ice Cream Pizza Waffle.png",
+    "tags": [
+      "frozen"
+    ],
+    "special": false
+  },
+  {
+    "name": "Pista Ice Cream Pizza Waffle",
+    "category": "Desserts",
+    "price": 180,
+    "rating": 4.7,
+    "desc": "Waffle base topped with pista ice cream.",
+    "image": "./images/Pista Ice Cream Pizza Waffle.png",
+    "tags": [
+      "frozen"
+    ],
+    "special": false
+  },
+  {
+  "name": "Strawberry Lassi",
+  "category": "Drinks",
+  "price": 60,
+  "rating": 4.7,
+  "desc": "Strawberry Lassi with fresh strawberry pulp.",
+  "image": "./images/Strawberry Lassi.png",
+  "tags": [
+    "crispy"
+  ],
+  "special": false
+  },
+  {
+    "name": "Mango Lassi",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.8,
+    "desc": "Mango Lassi with fresh mango pulp.",
+    "image": "./images/Mango Lassi.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Bluebarry Lassi",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.8,
+    "desc": "Boneless crispy fried chicken strips.",
+    "image": "./images/Bluebarry Lassi.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Orange Lassi",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.8,
+    "desc": "Orange Lassi with fresh orange pulp.",
+    "image": "./images/Orange Lassi.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+  {
+    "name": "Pineapple Lassi",
+    "category": "Drinks",
+    "price": 60,
+    "rating": 4.8,
+    "desc": "Pineapple Lassi with fresh pineapple pulp.",
+    "image": "./images/Pineapple Lassi.png",
+    "tags": [
+      "crispy"
+    ],
+    "special": false
+  },
+    {
+    "name": "Veg Cheese Pasta",
+    "category": "Main",
+    "price": 80,
+    "rating": 4.8,
+    "desc": "Creamy pasta loaded with vegetables and cheese.",
+    "image": "./images/Veg Cheese Pasta.png",
+    "tags": [
+      "Cheesy"
+    ],
+    "special": false
+  },
+     {
+    "name": "Chicken Cheese Pasta",
+    "category": "Main",
+    "price": 110,
+    "rating": 4.8,
+    "desc": "Creamy pasta loaded with Chicken and cheese.",
+    "image": "./images/Chicken Cheese Pasta.png",
+    "tags": [
+      "Cheesy"
+    ],
+    "special": false
+  }
+
+]
+
+
+
+
+
+
+
+

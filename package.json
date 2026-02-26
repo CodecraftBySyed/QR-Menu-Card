@@ -1,0 +1,14 @@
+{
+  "name": "bytes-and-spicy",
+  "version": "1.0.0",
+  "description": "Bytes & Spicy - Digital QR Menu",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "sweetalert2": "^11.10.0",
+    "tailwindcss": "^4.2.1"
+  }
+}
