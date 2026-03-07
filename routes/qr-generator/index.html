@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../src/output.css?v=2" />
+    <link rel="stylesheet" href="../../src/style.css?v=2" />
+    <link rel="stylesheet" href="./style.css?v=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0/lib/qr-code-styling.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-white via-blue-50 to-cyan-50 text-gray-800">
+    <header class="px-4 sm:px-6 py-6">
+      <div class="max-w-6xl mx-auto flex items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img src="../../images/logo.png" alt="Cafe Logo" class="w-10 h-10 rounded-full object-cover border border-gray-200 bg-white" onerror="this.style.display='none'" />
+          <div>
+            <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">QR Code Generator</h1>
+            <p class="text-sm text-gray-600">Generate table QR codes with logo embedding and download</p>
+          </div>
+        </div>
+        <a href="../../index.html" class="text-sm font-semibold text-slate-700 hover:text-slate-900 underline underline-offset-4">Back to Menu</a>
+      </div>
+    </header>
+
+    <main class="px-4 sm:px-6 pb-16">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <section class="bg-white/90 backdrop-blur rounded-2xl shadow-xl border border-gray-200 p-6">
+          <h2 class="text-lg font-bold text-slate-800 mb-4">Form</h2>
+
+          <div class="space-y-4">
+            <div>
+              <label for="menuUrl" class="text-sm font-semibold text-gray-700 mb-1 block">Cafe / Menu URL</label>
+              <input id="menuUrl" type="url" placeholder="https://domain.com/menu" class="w-full border-2 border-gray-200 rounded-lg py-2.5 px-3 bg-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition" />
+              <p class="text-xs text-gray-500 mt-1">Table parameter will be added automatically.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="tableNumber" class="text-sm font-semibold text-gray-700 mb-1 block">Table Number</label>
+                <input id="tableNumber" type="text" inputmode="numeric" placeholder="5" class="w-full border-2 border-gray-200 rounded-lg py-2.5 px-3 bg-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition" />
+              </div>
+
+              <div>
+                <label for="logoFile" class="text-sm font-semibold text-gray-700 mb-1 block">Cafe Logo Upload</label>
+                <input id="logoFile" type="file" accept="image/*" class="w-full border-2 border-gray-200 rounded-lg py-2 px-3 bg-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition" />
+                <p class="text-xs text-gray-500 mt-1">If empty, default logo will be used.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <button id="generateBtn" type="button" class="flex-1 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95">
+                Generate QR
+              </button>
+              <button id="resetBtn" type="button" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95">
+                Reset
+              </button>
+            </div>
+
+            <div class="pt-2">
+              <div class="h-px bg-gray-200"></div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-end">
+                <div>
+                  <label for="tableCount" class="text-sm font-semibold text-gray-700 mb-1 block">Number of Tables</label>
+                  <input id="tableCount" type="number" min="1" max="300" placeholder="10" class="w-full border-2 border-gray-200 rounded-lg py-2.5 px-3 bg-white focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition" />
+                  <p class="text-xs text-gray-500 mt-1">Generates table=1…N automatically.</p>
+                </div>
+                <div class="flex items-center justify-between gap-3">
+                  <div id="bulkStatus" class="text-xs text-gray-600 min-h-[18px]"></div>
+                  <div id="bulkSpinner" class="qrgen-spinner hidden"></div>
+                </div>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3">
+                <button id="generateAllBtn" type="button" class="flex-1 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95">
+                  Generate All Tables
+                </button>
+                <button id="downloadZipBtn" type="button" class="flex-1 bg-amber-600 hover:bg-amber-700 text-white font-semibold py-2.5 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                  Download All (ZIP)
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-white/90 backdrop-blur rounded-2xl shadow-xl border border-gray-200 p-6">
+          <div class="flex items-start justify-between gap-3 mb-4">
+            <div>
+              <h2 class="text-lg font-bold text-slate-800">Preview</h2>
+              <p class="text-sm text-gray-600">Your QR will appear here</p>
+            </div>
+            <div class="text-xs text-gray-500 text-right">
+              <div id="finalUrlLabel" class="truncate max-w-[220px] sm:max-w-[280px] md:max-w-[360px]"></div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-4 sm:p-6">
+            <div class="flex flex-col items-center gap-4">
+              <div class="w-full flex items-center justify-center">
+                <div
+                  id="qrMount"
+                  class="qrgen-preview w-full max-w-[260px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] aspect-square grid place-items-center overflow-hidden rounded-2xl bg-white border border-gray-200"
+                ></div>
+              </div>
+
+              <p id="previewHint" class="text-sm text-gray-500 text-center">Generate a QR to preview.</p>
+
+              <button
+                id="downloadBtn"
+                type="button"
+                class="w-full sm:w-auto sm:min-w-[220px] bg-slate-900 hover:bg-slate-800 text-white font-semibold py-2.5 px-5 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled
+              >
+                Download QR
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="max-w-6xl mx-auto mt-6 bg-white/90 backdrop-blur rounded-2xl shadow-xl border border-gray-200 p-6">
+        <div class="flex items-start justify-between gap-3 mb-4">
+          <div>
+            <h2 class="text-lg font-bold text-slate-800">Generated QRs</h2>
+            <p class="text-sm text-gray-600">Generate multiple tables and download individually or as a ZIP</p>
+          </div>
+          <div class="text-xs text-gray-500 text-right">
+            <div id="bulkFinalUrlBase" class="truncate max-w-[220px] sm:max-w-[420px]"></div>
+          </div>
+        </div>
+
+        <div id="bulkEmptyState" class="text-sm text-gray-600 bg-gray-50 border border-gray-200 rounded-2xl p-4">
+          No bulk QRs generated yet.
+        </div>
+
+        <div id="bulkGrid" class="qrgen-grid hidden"></div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

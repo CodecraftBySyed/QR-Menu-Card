@@ -1,0 +1,91 @@
+.qrgen-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (min-width: 640px) {
+  .qrgen-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .qrgen-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.qrgen-card {
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qrgen-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.qrgen-card-title {
+  font-weight: 800;
+  color: rgb(15, 23, 42);
+}
+
+.qrgen-card-url {
+  font-size: 12px;
+  color: rgb(107, 114, 128);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.qrgen-card-mount {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  background: rgb(249, 250, 251);
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 16px;
+}
+
+.qrgen-preview canvas,
+.qrgen-card-mount canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+.qrgen-card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.qrgen-card-actions button {
+  flex: 1 1 0%;
+}
+
+.qrgen-spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  border: 2px solid rgba(203, 213, 225, 1);
+  border-top-color: rgba(30, 64, 175, 1);
+  animation: qrgen-spin 0.85s linear infinite;
+}
+
+@keyframes qrgen-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
