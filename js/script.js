@@ -6,7 +6,7 @@ const WHATSAPP_ORDER_ENABLED = true;
 // WhatsApp Configuration (Update this with your phone number)
 const WHATSAPP_CONFIG = {
   enabled: true,  // Admin controls this in script.js
-  phone: '918807595210', // 919000000000 Replace with your WhatsApp number
+  phone: '919000000000', // 919000000000 Replace with your WhatsApp number
   countryCode: '+91'
 };
 
