@@ -1,162 +1,263 @@
-# 🚀 Bytes & Spicy — Digital QR Menu
+# 🚀 Bytes & Spicy --- Digital QR Menu System
 
-Modern · Mobile-First · Lightning Fast
+**Modern · Mobile‑First · Static · Café‑Ready**
 
-A clean, café-ready QR menu experience built with HTML, Tailwind CSS, and JavaScript — designed to replace outdated paper menus with something fresh, hygienic, and aesthetic.
+A lightweight **QR Menu & WhatsApp Ordering System** built with **HTML,
+Tailwind CSS, and JavaScript**.\
+Designed for cafés and small restaurants that want a **fast, hygienic,
+and modern menu experience** without servers or databases.
 
----
+Customers simply **scan a QR code → open the menu → place an order**.
 
-📌 Badges
+------------------------------------------------------------------------
 
-<!-- Add CI, demo or license badges here -->
+# 🌟 Project Story
 
+One evening I visited a café and picked up their menu.
 
+It looked **old, faded, and unhygienic**.
 
-🌟 Story — How This Idea Started
+At that moment I thought:
 
-I visited a café for snacks one evening, picked up the menu, and instantly noticed… it was dead — colors faded, lamination peeling, totally unhygienic.
+> "Menus should be digital. Why not build a QR-based experience?"
 
-Right there my brain went:
+So this project was created.
 
-“Menus should be digital. Why not build a QR-based experience?”
+**Scan → Menu opens instantly**
 
-So I built this:
+• No mobile app\
+• No backend server\
+• Works on any smartphone\
+• Simple and fast
 
-Scan → Clean menu opens instantly
+------------------------------------------------------------------------
 
-- No app
-- No backend
-- Works on any phone
-- Fast, aesthetic, practical
+# 🔥 Core Features
 
-A small café moment turned into a polished project that restaurants can actually use.
+### 📱 Mobile‑First Design
 
----
+Responsive layout built using **Tailwind CSS**.
 
-🔥 Features
+### 🍽 Dynamic Menu
 
-- 📱 Mobile-first UI
-- 🎥 Video hero section with gradient overlay
-- 🍽 Categorized menus (All / Starters / Main / Drinks / Desserts)
-- ⚡ Lazy-loaded images for performance
-- 🎯 Smooth category filtering
-- 🧊 Glassmorphism effects & soft shadows
-- 🖱 Animated cards & transitions
-- 🖨 QR-ready (print or display)
-- 🌐 Pure frontend — no backend required
+Menu items loaded from **menu.json** for easy updates.
 
----
+### 🔍 Smart Navigation
 
-🔗 Live Demo & Portfolio
+-   Category filters
+-   Menu search
+-   Specials section
 
-- Live Demo: (https://qr-menu-card.netlify.app/)
-- Developer Portfolio: https://codecraftbysyed-portfolio.vercel.app/
+### ⚡ Static Hosting Ready
 
----
----
-Digital QR Menu Design 
-<img src="images/Digital-qr.png" alt="A Digital QR Scanner" width="500"/>
----
-Normal QR Menu Design 
-<img src="images/normal-qr.png" alt="A Digital QR Scanner" width="500"/>
----
+Works on:
 
-(Add your own screenshots here later — UI, hero section, menu categories, mobile view)
+-   Netlify
+-   GitHub Pages
+-   Vercel
+-   Any static host
 
-1. Hero Section Preview
-2. Menu Cards Preview
-3. Mobile Navigation Preview
-4. QR Scan Preview (Optional)
+No backend required.
 
-📱 QR Code (Add Yours Here)
+------------------------------------------------------------------------
 
-👉 Place your QR PNG here:
+# 🛒 Ordering System (Pro Mode)
 
+When ordering is enabled, the system becomes a **full QR ordering
+interface**.
 
-```html
-<div class="qr-card">
-  <img src="./qr.png" alt="Scan to open menu" width="160" height="160" />
-  <p>Scan to open the menu</p>
-</div>
+Features:
+
+• Item popup ordering modal\
+• Quantity selector\
+• Special instructions\
+• Table auto detection\
+• Lightweight cart system\
+• Live cart counter\
+• WhatsApp checkout
+
+Customers can **add multiple items to cart and send a single order**.
+
+------------------------------------------------------------------------
+
+# 🔄 Basic vs Pro Mode
+
+The project supports **two modes using a feature flag**.
+
+## Basic Mode
+
+``` javascript
+WHATSAPP_ORDER_ENABLED = false
 ```
 
-Generate QR with:
+Menu browsing only.
 
-- https://www.qrserver.com
-- https://www.qrcode-monkey.com
+## Pro Mode
 
----
-
-🛠 Tech Stack
-
-- HTML5 (structure)
-- Tailwind CSS (layout & responsive design)
-- Custom CSS (effects, animations, theme)
-- JavaScript (category logic, scroll behavior)
-
----
-
-📁 Project Structure
-
-```
-Bytes-And-Spicy/
- ├── index.html
- ├── js/
- │    └── script.js
- ├── src/
- │    └── style.css
- ├── images/
- │    └── menu-item-images...
- ├── video/
- │    └── hero-video.webm
- └── qr.png (your QR goes here)
+``` javascript
+WHATSAPP_ORDER_ENABLED = true
 ```
 
----
+Cart + WhatsApp ordering enabled.
 
-✏️ How to Customize
+------------------------------------------------------------------------
 
-- 🏪 Restaurant Name
+# 📱 Table Detection
 
-  Edit inside `.hero-content` in `index.html`.
+Each QR code contains a table parameter.
 
-- 🎥 Hero Background
+Example:
 
-  Replace hero video inside `/video/`.
+    https://domain.com/menu?table=5
 
-- 🍔 Menu Items
+The system:
 
-  Edit `menu.json` (if present) or update the generator in `js/script.js`.
+1.  Detects the table number
+2.  Saves it in localStorage
+3.  Includes it in the order message
 
-- 📞 Footer Details
+Example order:
 
-  Update contact text at the bottom of the page.
+    🧾 New Order
 
----
+    Table: 5
+    ☕ Chai x2
+    🍪 Biscuit x1
+    Notes: Less sugar
 
-⭐ Upgrades You Can Add
+------------------------------------------------------------------------
 
-If you want, I can also implement:
+# 🧺 Cart System
 
-- ✔ Inline QR preview inside the website
-- ✔ Printable table card design (modern + minimal)
-- ✔ Favorites system using localStorage
-- ✔ Dynamic JSON-powered menu
-- ✔ Admin panel for restaurant owners
-- ✔ Category animations + micro-interactions
+Cart stored in **localStorage**.
 
-Just tell me what vibe you want.
+Example structure:
 
----
+``` json
+[
+  { "name": "Chai", "qty": 2 },
+  { "name": "Coffee", "qty": 1 }
+]
+```
 
-📄 License
+Features:
 
-This project is released under the MIT License.
-Created with ❤️ by CodeCraft by Syed.
+• Quantity controls\
+• Live cart counter\
+• Remove items\
+• Scrollable cart modal
 
+------------------------------------------------------------------------
 
+# 📦 WhatsApp Checkout
 
+At checkout the system generates a message and opens:
 
+    https://wa.me/restaurantNumber?text=orderDetails
 
+After sending the order the cart is cleared.
 
+------------------------------------------------------------------------
 
+# 🔳 QR Generator
+
+Location:
+
+    /routes/qr-generator/
+
+Features:
+
+• Generate table QR codes\
+• Embed café logo\
+• High resolution PNG export\
+• Mobile responsive preview\
+• Bulk QR generation\
+• ZIP download
+
+Example QR URL:
+
+    /menu?table=5
+
+------------------------------------------------------------------------
+
+# 🛠 Tech Stack
+
+Frontend only:
+
+• HTML5\
+• Tailwind CSS\
+• JavaScript\
+• SweetAlert2\
+• qr-code-styling
+
+Optional:
+
+• Service Worker for offline caching
+
+------------------------------------------------------------------------
+
+# 📁 Project Structure
+
+    Bytes-And-Spicy/
+    │
+    ├── index.html
+    ├── menu.json
+    │
+    ├── js/
+    │   └── script.js
+    │
+    ├── src/
+    │   └── style.css
+    │
+    ├── images/
+    │
+    ├── video/
+    │
+    ├── routes/
+    │   └── qr-generator/
+    │
+    └── service-worker.js
+
+------------------------------------------------------------------------
+
+# ⚡ Performance Optimizations
+
+• Lazy loaded images\
+• Service worker caching\
+• Cached menu price lookups\
+• Shared SweetAlert helper functions
+
+------------------------------------------------------------------------
+
+# 🚀 Future Improvements
+
+Possible upgrades:
+
+• Printable table QR cards\
+• Admin configuration panel\
+• Order dashboard\
+• Multi‑restaurant support
+
+------------------------------------------------------------------------
+
+# 🌐 Live Demo
+
+https://qr-menu-card.netlify.app/
+
+Developer Portfolio:
+
+https://codecraftbysyed-portfolio.vercel.app/
+
+------------------------------------------------------------------------
+
+# 📄 License
+
+MIT License
+
+------------------------------------------------------------------------
+
+# ❤️ Author
+
+Created by **CodeCraft by Syed**
+
+A small café idea turned into a **real QR menu system**.
